@@ -2,6 +2,9 @@
     Vertex Ordering and Coloring Algorithms for Graphs
 </h1>
 
+<p>
+Seun Suberu, December 2022
+</p>
 <h4> 
 This project looks at implementing an algorithm in multiple ways to solve a problem, analyzing the 
 algorithms’ implementations for running time, and testing and your implementations to show they 

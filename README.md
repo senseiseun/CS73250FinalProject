@@ -44,27 +44,27 @@ Creating a complete graph is an O(V&sup2) operation (with V being the number of 
 </p>
 <img src="Output/Images/GraphCreation/completeCreation.png">
 <p>The pattern shows an extremely strong quadratic pattern.</p>
-<h4>Cycle</h4>
+<h4><a href="GraphCreation">Cycle</a></h4>
 <p>
 Creating a complete graph is an O(V) operation (with V being the number of vertices in the graph)  because for each vertex, we only have to add 1 vertex to its list. 
 </p>
 <img src="Output/Images/GraphCreation/cycleCreation.png">
 <p>The pattern shows an extremely strong quadratic pattern.</p>
-<h4>Random Tiered</h4>
+<h4><a href="GraphCreation">Random Tiered</a></h4>
 <p>Creating a complete graph is an O(V+E) operation (with V being the number of vertices in the graph and E being the number of edges)  because we randomly pick two unique vertices and make them an edge. We do this until we get a specific number of edges.</p>
 <img src="Output/Images/GraphCreation/tiered_10000_times.csv.creation.png">
 <p>The pattern is extremely strong as we can see an r&sup2 of .999, so there is an extremely strong linear pattern.
  For this distribution, the first 10% of vertices have ~50% of the edges, because when randomly choosing two random vertices, the selection process has a 50% bias towards the first 10% of vertices.
 </p>
 <img src="Output/Images/EdgeDistribution/tiered_10000_1950000_edgeCount.csv.dist.png">
-<h4>Random Double Tiered</h4>
+<h4><a href="GraphCreation">Random Double Tiered</a></h4>
 <p>Creating a complete graph is an O(V+E) operation (with V being the number of vertices in the graph and E being the number of edges)  because we randomly pick two unique vertices and make them an edge. We do this until we get a specific number of edges.</p>
 <img src="Output/Images/GraphCreation/doubleTiered_10000_times.csv.creation.png">
 <p>The pattern is extremely strong as we can see an r&sup2 of 1, so there is an extremely strong linear pattern.
  For this distribution, the first and last 10% of vertices each have ~25% of the edges, because when randomly choosing two random vertices, the selection process has a 25% bias towards the first, 25% towards the last 10% and 50% for the middle 80% of vertices.
 </p>
 <img src="Output/Images/EdgeDistribution/doubleTiered_2000_160000_edgeCount.csv.dist.png">
-<h4>Random Uniform</h4>
+<h4><a href="GraphCreation">Random Uniform</a></h4>
 <p>Creating a complete graph is an O(V+E) operation (with V being the number of vertices in the graph and E being the number of edges)  because we randomly pick two unique vertices and make them an edge. We do this until we get a specific number of edges.</p>
 <img src="Output/Images/GraphCreation/uniform_10000_times.csv.creation.png">
 <p>The pattern is extremely strong as we can see an r&sup2 of 1, so there is an extremely strong linear pattern.
@@ -73,7 +73,7 @@ Creating a complete graph is an O(V) operation (with V being the number of verti
 <img src="Output/Images/EdgeDistribution/uniform_10000_1650000_edgeCount.csv.dist.png">
 
 <h3>Vertex Ordering</h3>
-<h4>Smallest Last Vertex Order</h4>
+<h4><a href="Ordering">Smallest Last Vertex Order</a></h4>
 <h5>Algorithm Walkthrough<h5>
 <div style="display: flex">
     <div style="flex: 1; margin-right: 1rem">
@@ -305,9 +305,9 @@ Here is a table showing the largest deleted degree and largest color used for 50
 The maximum original degree of the vertices in the graph determine the maximum number of colors that may need to be used for the graph. The largest deleted degree is the minimum number of colors that may need to be used for the graph.
 </p>
 
-<h3>
+<h3><a href="Ordering">
     Smallest Original Vertex Order
-</h3>
+</a></h3>
 
 <p>
 Analyzing this Smallest Original Vertex Order Algorithm Implementation gives us a O(V) runtime with V being the number of vertices in the graph. I will leave annotations in the code snippet, but here is a summary of the runtime complexity:
@@ -465,9 +465,9 @@ Therefore there is no relation of the number of edges to the amount of time that
 This table shows a linear growth, as from 5000 to 10000 vertices on a uniformly distributed random graph, it would grow by roughly a factor of 2.
 
 </p>
-<h3>
+<h3><a href="Ordering">
 Uniform Distributed Random Vertex Order
-</h3>
+</a></h3>
 
 <p>
 Analyzing this Uniformly Distributed Random Vertex Order Algorithm Implementation gives us a O(V) runtime with V being the number of vertices in the graph. I will leave annotations in the code snippet, but here is a summary of the runtime complexity:
@@ -624,9 +624,9 @@ The pattern is extremely weak as we can see an r&sup2 of 8.64*105 along with a l
 Therefore there is no relation of the number of edges to the amount of time that the Smallest Original Vertex Order takes. This supports the claim that the asymptotic runtime of the algorithm is O(V). 
 
 </p>
-<h4>
+<h4><a href="ColoringAlgorithms">
 Comparing Ordering Algorithms
-</h4>
+</a></h4>
 <h5>
 Maximum Colored Used
 </h5>
